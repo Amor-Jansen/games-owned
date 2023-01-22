@@ -37,12 +37,16 @@ def main_menu():
 
         if list_choice == '1':
             print('Welcome to the ps4 list')
+            break
         elif list_choice == '2':
             print('welcome to the ps3 list')
+            break
         elif list_choice == '3':
             print('A new game? Lets add it!')
+            break
         elif list_choice == '4':
             print('See you next time!')
+            quit()
         else:
             print('Invalid! Choose 1-4 please!')
 
