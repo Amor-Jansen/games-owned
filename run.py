@@ -60,5 +60,4 @@ def get_ps4_data():
     print(data1)
     
 
-
 main_menu()
