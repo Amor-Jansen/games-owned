@@ -12,7 +12,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('games_owned')
 
-ps4 = SHEET.worksheet('ps4')
 ps3 = SHEET.worksheet('ps3')
 
 # Welcome message
@@ -41,7 +40,6 @@ def main_menu():
             break
         elif list_choice == '2':
             print('welcome to the ps3 list')
-            get_ps3_data()
             break
         elif list_choice == '3':
             print('A new game? Lets add it!')
@@ -55,16 +53,12 @@ def main_menu():
 
 def get_ps4_data():
     """
-    This will be the information for all ps4 games.
+    Allows the user to view games on the ps4 list.
     """
-    print('This is the ps4 spreadsheet.')
-
-    while True:
-        ps4 = SHEET.worksheet('ps4')
-        print('Please select a letter')
-        print('You can view games in that letter.')
-
-        
+    ps4 = SHEET.worksheet('ps4')
+    data1 = ps4.get_all_values()
+    print(data1)
+    
 
 
-    main_menu()
+main_menu()
