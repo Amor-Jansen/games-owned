@@ -22,6 +22,19 @@ print('Here you can view all the \n video games you own.')
 print('You can also update your list.')
 print('To make sure you do not buy doubles. \n')
 
+def main_menu():
+    """
+    The main menu will promt the user on what sheet they want to access.
+    As well as exit options.
+    """
+    print('What would you like to do?')
+    print('Please select 1 - 4')
+    print('1. ps4\n 2. ps3\n 3. New Entry\n 4. Quit')
+
+    while True:
+        list_choice = input('What would you like to do: \n')
+
+
 # Name request
 
 print('Please enter your name.')
