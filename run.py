@@ -22,6 +22,7 @@ print('Here you can view all the \n video games you own.')
 print('You can also update your list.')
 print('To make sure you do not buy doubles. \n')
 
+
 def main_menu():
     """
     The main menu will promt the user on what sheet they want to access.
@@ -34,6 +35,17 @@ def main_menu():
     while True:
         list_choice = input('What would you like to do: \n')
 
+        if list_choice == '1':
+            print('Welcome to the ps4 list')
+        elif list_choice == '2':
+            print('welcome to the ps3 list')
+        elif list_choice == '3':
+            print('A new game? Lets add it!')
+        elif list_choice == '4':
+            print('See you next time!')
+        else:
+            print('Invalid! Choose 1-4 please!')
+
 
 # Name request
 
@@ -41,3 +53,5 @@ print('Please enter your name.')
 print('It must be a valid name at least 8 characters long.')
 print('only A-z, a-z and 0-8 will be accepted')
 print('Blank space will be removed')
+
+main_menu()
