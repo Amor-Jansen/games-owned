@@ -50,12 +50,4 @@ def main_menu():
         else:
             print('Invalid! Choose 1-4 please!')
 
-
-# Name request
-
-print('Please enter your name.')
-print('It must be a valid name at least 8 characters long.')
-print('only A-z, a-z and 0-8 will be accepted')
-print('Blank space will be removed')
-
-main_menu()
+    main_menu()
