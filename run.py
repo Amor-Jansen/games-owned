@@ -37,9 +37,11 @@ def main_menu():
 
         if list_choice == '1':
             print('Welcome to the ps4 list')
+            get_ps4_data()
             break
         elif list_choice == '2':
             print('welcome to the ps3 list')
+            get_ps3_data()
             break
         elif list_choice == '3':
             print('A new game? Lets add it!')
@@ -49,5 +51,20 @@ def main_menu():
             quit()
         else:
             print('Invalid! Choose 1-4 please!')
+
+
+def get_ps4_data():
+    """
+    This will be the information for all ps4 games.
+    """
+    print('This is the ps4 spreadsheet.')
+
+    while True:
+        ps4 = SHEET.worksheet('ps4')
+        print('Please select a letter')
+        print('You can view games in that letter.')
+
+        
+
 
     main_menu()
