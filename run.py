@@ -56,7 +56,7 @@ def get_ps4_data():
     Allows the user to view games on the ps4 list.
     """
     ps4 = SHEET.worksheet('ps4')
-    data1 = ps4.get_all_values()
+    data1 = ps4.col_values(5)
     print(data1)
     
 
